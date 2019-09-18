@@ -33,6 +33,7 @@ bool isPalindrome(string s) {
 	}
 	return true;
 }
+
 int main()
 {
 	vector<string> v_str1;
@@ -59,7 +60,7 @@ int main()
 			// do not need to check smaller combinations
 			if (len > max_len && isPalindrome(s1 + s2)) {
 				max_len = std::max(max_len, len);
-					cout << "max_len = " << max_len << s1 + s2 << endl;
+				cout << "max_len = " << max_len << s1 + s2 << endl;
 			}
 		}
 		
